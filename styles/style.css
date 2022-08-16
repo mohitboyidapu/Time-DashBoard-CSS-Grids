@@ -1,0 +1,110 @@
+* {
+   font-family: 'Rubik', sans-serif;
+}
+:root {
+   --Blue: hsl(246, 80%, 60%);
+   --SoftBlue: hsl(195, 74%, 62%);
+   --LightRed: hsl(348, 100%, 68%);
+   --LimeGreen: hsl(145, 58%, 55%);
+   --Violet: hsl(264, 64%, 52%);
+   --SoftOrange: hsl(43, 84%, 65%);
+   --LightRed: hsl(15, 100%, 70%);
+   --VeryDarkBlue: hsl(226, 43%, 10%);
+   --DarkBlue: hsl(235, 46%, 20%);
+   --DesaturatedBlue: hsl(235, 45%, 61%);
+   --PaleBlue: hsl(236, 100%, 87%);
+ }
+
+
+body{
+   color: white;
+   background-color: var(--VeryDarkBlue);
+}
+.report-grid{
+   width: 60%;
+   margin: 140px auto 0 auto;
+   display: grid;
+   gap: 1.5rem;
+   grid-template-columns: repeat(4, 1fr);   
+}
+.dashBoard{
+   background-color: var(--DarkBlue);
+   grid-row-start: 1;
+   grid-row-end: 3;
+   border-radius: 1rem;
+   /* width: 300px; */
+}
+#name {
+   font-weight: 300;
+   font-size: 2.5em;
+}
+.dashBoard .profile{
+   background-color: var(--Blue);
+   padding: 2.5rem;
+   border-radius: 1rem;
+}
+
+.dashBoard .stats{
+   padding: 2.5rem;
+   margin: 0;
+}
+
+.dashBoard .stats p{
+   font-size: 1.2em;
+   margin-top: 1rem;
+}
+.dp{
+   width: 80px;
+   border: 2px solid white;
+   border-radius: 50%;
+}
+
+.grid-item{
+   /* padding-bottom: 0r; */
+   /* background-color: var(--SoftOrange); */
+   border-radius: 1rem;
+}
+
+.grid-item img{
+   padding: 0;
+   width: 4em;
+   z-index: -15;
+}
+
+.grid-item .profile{
+   z-index: -10;
+   border-radius: 1rem;
+   text-align: end;
+   height: 50px;
+   /* background-color: rgb(248, 196, 75); */
+}
+.stats{
+   padding: 15px;
+   position: relative;
+   bottom: 0;
+   margin: 0;
+   height: auto;
+   background-color: var(--DarkBlue);
+   border-radius: 1rem;
+}
+.time{
+   font-size: 3em;
+}
+.work{
+   background-color: var(--LightRed);
+}
+.play {
+   background-color: var(--SoftBlue);
+}
+.study {
+   background-color: var(--LightRed);
+}
+.exercise {
+   background-color: var(--LimeGreen);
+}
+.social {
+   background-color: var(--Violet);
+}
+.selfCare {
+   background-color: var(--SoftOrange);
+}
